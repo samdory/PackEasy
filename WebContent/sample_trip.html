@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>Packeasy_Sample_Trip</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, handheld" />
+		<link rel="stylesheet" type="text/css" href="css/enhanced.css" media="screen  and (min-width: 40.5em)" />
+
+		<link href="css/format.css" rel="stylesheet" type="text/css" />
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+
+		<!--[if (lt IE 9)&(!IEMobile)]>
+		<link rel="stylesheet" type="text/css" href="enhanced.css" />
+		<![endif]-->
+		<script type="text/javascript" src="js/modernizr.js"></script>
+
+		<script type="text/javascript">
+			function ChangeColor(tableRow, highLight) {
+				if (highLight) {
+					tableRow.style.backgroundColor = '#dcfac9';
+				} else {
+					tableRow.style.backgroundColor = 'white';
+				}
+			}
+
+			function DoNav(theUrl) {
+				document.location.href = theUrl;
+			}
+		</script>
+
+	</head>
+
+	<body id="page">
+
+		<div class="header">
+			<!--<a class="logo" href="home.html"><img src="images/packeasy.png" alt="Packeasy" /></a>-->
+			<a href="home.html"><h1>Packeasy</h1></a>
+		</div><!--header-->
+
+		<div class="main">
+			<div class="mytrip_name">
+				<h2>Trip Name</h2>
+			</div><!--trip_name-->
+
+			<div class="mytrip_content">
+				
+				<div class="mytrip_btn">
+					<a href="my_trip_add.html"><button type="button">Add Item</button></a>
+					<a href="my_trip_edit.html"><button type="button">Edit</button></a>
+					<a href="my_trip_share.html"><button type="button">Share</button></a>
+				</div>
+				
+		
+				<div class="mytrip_wrapper">
+					<div class="trip_accordionButton">
+						<h2>Wardrobe</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Shirts</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Suits</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Ties</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Electronics</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Macbook</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>iPad</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Adaptors</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Personal Care</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Deodorant</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Toothpaste</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Document</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Passport</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Credit Cards</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Footwear</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Shoes</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Flip Flops</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Accessories</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Braces</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Clocks</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Jewerly</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Braces</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Clocks</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="trip_accordionButton">
+						<h2>Personal</h2>
+					</div>
+					<div class="accordionContent">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('create_trip.html');">
+								<td>Braces</td>
+								<td>Qty</td>
+							</tr>
+							<tr onmouseover="ChangeColor(this, true);"
+							onmouseout="ChangeColor(this, false);"
+							onclick="DoNav('http://www.nyu.edu/');">
+								<td>Clocks</td>
+								<td>Qty</td>
+							</tr>
+						</table>
+					</div>
+					
+					
+				</div>
+			</div><!--packing_list-->
+		</div><!--page-->
+
+	</body>
+
+</html>
+

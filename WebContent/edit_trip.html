@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>Packeasy_Edit_Trip</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, handheld" />
+		<link rel="stylesheet" type="text/css" href="css/enhanced.css" media="screen  and (min-width: 40.5em)" />
+
+		<link href="css/format.css" rel="stylesheet" type="text/css" />
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/javascript_02.js"></script>
+
+		<!--[if (lt IE 9)&(!IEMobile)]>
+		<link rel="stylesheet" type="text/css" href="enhanced.css" />
+		<![endif]-->
+		<script type="text/javascript" src="js/modernizr.js"></script>
+
+		<script type="text/javascript">
+			function ChangeColor(tableRow, highLight) {
+				if (highLight) {
+					tableRow.style.backgroundColor = '#dcfac9';
+				} else {
+					tableRow.style.backgroundColor = 'white';
+				}
+			}
+
+			function DoNav(theUrl) {
+				document.location.href = theUrl;
+			}
+		</script>
+
+	</head>
+
+	<body id="page">
+
+		<div class="header">
+			<!--<a class="logo" href="home.html"><img src="images/packeasy.png" alt="Packeasy" /></a>-->
+			<a href="home.html"><h1>Packeasy</h1></a>
+		</div><!--header-->
+
+		<div class="main">
+			<div class="mytrip_name">
+				<h2>Trip Name</h2>
+			</div><!--trip_name-->
+
+			<div class="mytrip_content">
+				
+				<div class="mytrip_btn">
+					<a href="add_item.html"><button type="button">Add Item</button></a>
+					<a href="edit_trip.html"><button type="button">Edit</button></a>
+					<a href="share_trip.html"><button type="button">Share</button></a>
+				</div>
+				
+		
+				<div class="mytrip_wrapper">
+					<div class="mytrip_accordion_01">
+						<h2>Wardrobe</h2>
+					</div>
+					<div class="mytrip_content_01">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Shirts</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Suits</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							<tr>
+								<td><button type="button">Delete</button>Ties</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_02">
+						<h2>Electronics</h2>
+					</div>
+					<div class="mytrip_content_02">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Macbook</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>iPad</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Adaptors</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_03">
+						<h2>Personal Care</h2>
+					</div>
+					<div class="mytrip_content_03">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Deodorant</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Toothpaste</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_04">
+						<h2>Document</h2>
+					</div>
+					<div class="mytrip_content_04">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Passport</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Credit Cards</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_05">
+						<h2>Footwear</h2>
+					</div>
+					<div class="mytrip_content_05">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Shoes</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Flip Flops</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_06">
+						<h2>Accessories</h2>
+					</div>
+					<div class="mytrip_content_06">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Braces</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Clocks</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_07">
+						<h2>Jewerly</h2>
+					</div>
+					<div class="mytrip_content_07">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Braces</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Clocks</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_08">
+						<h2>Personal</h2>
+					</div>
+					<div class="mytrip_content_08">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><button type="button">Delete</button>Braces</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">Delete</button>Clocks</td>
+								<td><input type = "text" id = "quantity" value = "Qty"></td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					
+				</div>
+			</div><!--packing_list-->
+		</div><!--page-->
+
+	</body>
+
+</html>
+

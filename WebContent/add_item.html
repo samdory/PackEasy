@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>Packeasy_Add_Item</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, handheld" />
+		<link rel="stylesheet" type="text/css" href="css/enhanced.css" media="screen  and (min-width: 40.5em)" />
+
+		<link href="css/format.css" rel="stylesheet" type="text/css" />
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/javascript_02.js"></script>
+
+		<!--[if (lt IE 9)&(!IEMobile)]>
+		<link rel="stylesheet" type="text/css" href="enhanced.css" />
+		<![endif]-->
+		<script type="text/javascript" src="js/modernizr.js"></script>
+
+		<script type="text/javascript">
+			function ChangeColor(tableRow, highLight) {
+				if (highLight) {
+					tableRow.style.backgroundColor = '#dcfac9';
+				} else {
+					tableRow.style.backgroundColor = 'white';
+				}
+			}
+
+			function DoNav(theUrl) {
+				document.location.href = theUrl;
+			}
+		</script>
+
+	</head>
+
+	<body id="page">
+
+		<div class="header">
+			<!--<a class="logo" href="home.html"><img src="images/packeasy.png" alt="Packeasy" /></a>-->
+			<a href="home.html"><h1>Packeasy</h1></a>
+		</div><!--header-->
+
+		<div class="main">
+			<div class="mytrip_name">
+				<h2>Trip Name</h2>
+			</div><!--trip_name-->
+
+			<div class="mytrip_content">
+				
+				<div class="mytrip_btn">
+					<a href="add_item.html"><button type="button">Done Add</button></a>
+					<a href="edit_trip.html"><button type="button">Edit</button></a>
+					<a href="share_trip.html"><button type="button">Share</button></a>
+				</div>
+				
+		
+				<div class="mytrip_wrapper">
+					<div class="mytrip_accordion_01">
+						<h2>Wardrobe</h2>
+					</div>
+					<div class="mytrip_content_01">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="wardrobe" value="Shirts">Shirts</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="wardrobe" value="Suits">Suits</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="wardrobe" value="Ties">Ties</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_02">
+						<h2>Electronics</h2>
+					</div>
+					<div class="mytrip_content_02">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="electronics" value="Macbook">Macbook</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="electronics" value="iPad">iPad</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="electronics" value="Adaptors">Adaptors</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_03">
+						<h2>Personal Care</h2>
+					</div>
+					<div class="mytrip_content_03">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="personal_care" value="Deodorant">Deodorant</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="personal_care" value="Toothpaste">Toothpaste</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_04">
+						<h2>Document</h2>
+					</div>
+					<div class="mytrip_content_04">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="document" value="Passport">Passport</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="document" value="Credit Cards">Credit Cards</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_05">
+						<h2>Footwear</h2>
+					</div>
+					<div class="mytrip_content_05">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="footwear" value="Shoes">Shoes</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="footwear" value="Flip Flops">Flip Flops</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_06">
+						<h2>Accessories</h2>
+					</div>
+					<div class="mytrip_content_06">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="accessories" value="Braces">Braces</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="accessories" value="Clocks">Clocks</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_07">
+						<h2>Jewerly</h2>
+					</div>
+					<div class="mytrip_content_07">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="jewerly" value="Braces">Braces</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="jewerly" value="Clocks">Clocks</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<div class="mytrip_accordion_08">
+						<h2>Personal</h2>
+					</div>
+					<div class="mytrip_content_08">
+						<table border="1" cellpadding="0" cellspacing="0">
+
+							<tr>
+								<td><input type="checkbox" name="personal" value="Braces">Braces</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="personal" value="Clocks">Clocks</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="button">Save</button>
+									<input type = "text" id = "add_item" value = "Add Item">
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					
+				</div>
+			</div><!--packing_list-->
+		</div><!--page-->
+
+	</body>
+
+</html>
+
