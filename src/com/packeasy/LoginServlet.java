@@ -1,5 +1,7 @@
 package com.packeasy;
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,16 +36,23 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try
         {
-            System.out.println("In the Login Servlet");
             LoginBean user = new LoginBean();
-            user.setUserName(request.getParameter("uid"));
+            String strUid = request.getParameter("uid");
+            user.setUserName(strUid);
             user.setPassword(request.getParameter("password"));
             user = LoginDAO.login(user);
+            //
             if(user.isValid())
             {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("currentSessionUser",user);
-                response.sendRedirect("home.html");
+                session.setAttribute("name",user.getRealName());
+                session.setAttribute("uid",strUid);
+                session.setAttribute("loggedIn", "yes");
+         
+                request.setAttribute("uid", strUid);
+                RequestDispatcher rd = request.getRequestDispatcher("mytrip_list.jsp");
+                rd.forward(request,response);
             }else
                 response.sendRedirect("login_failed.html");
         } catch (Throwable exc)

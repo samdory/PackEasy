@@ -11,8 +11,8 @@ public class ConnectionManager {
 		try {
 			String url = "jdbc:mysql://localhost:3306/";
 			String dbName = "packeasy"; // the name of Database.
-			String uname = "packeasy_user";
-			String pwd = "4Tc#uKa30nPQ";
+			String uname = "root";
+			String pwd = "securitytnc";
 
 			Class.forName("com.mysql.jdbc.Driver");
 			try {

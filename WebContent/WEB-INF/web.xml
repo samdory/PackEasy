@@ -29,6 +29,23 @@
   </servlet-mapping>
 
   <servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>com.packeasy.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+	<servlet-name>CreateTripServlet</servlet-name>
+	<servlet-class>com.packeasy.CreateTripServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateTripServlet</servlet-name>
+    <url-pattern>/CreateTripServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
 	<servlet-name>MyTripListDAO</servlet-name>
 	<servlet-class>com.packlist.MyTripListDAO</servlet-class>
   </servlet>

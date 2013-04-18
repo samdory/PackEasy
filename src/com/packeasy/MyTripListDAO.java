@@ -1,17 +1,21 @@
 package com.packeasy;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 
 public class MyTripListDAO {
 	static Connection currentCon = null;
 	static ResultSet rs = null;
-	public static MyTripListBean getList(MyTripListBean bean)
+	public static ArrayList<MyTripListBean> getList(String uid)
 	{
 		Statement stmt = null;
-		String uid = bean.getUid();
-		String searchQuery = "select * from tb_mytrip where uid='" + uid;
+		//
+		ArrayList<MyTripListBean> list = new ArrayList<MyTripListBean>();
+		//
+		String searchQuery = "select * from tb_mytrip where uid='" + uid+"' order by start_date desc";
 		System.out.println(searchQuery);
 		try
 		{
@@ -19,31 +23,28 @@ public class MyTripListDAO {
 			currentCon = ConnectionManager.getConnection();
 			stmt=currentCon.createStatement();
 			rs = stmt.executeQuery(searchQuery);
-			boolean userExists = rs.next();
-			
-			if (!userExists)
+			while(rs.next())
 			{
-				System.out.println("Username/Password entered is Incorrect or User doesnot Exists.");
-			}
-			else if (userExists)
-			{
-				String tripName = rs.getString("tripName");
-				bean.setTripName(tripName);
-				String tripLocation = rs.getString("tripLocation");
-				bean.setTripLocation(tripLocation);
-				String startDate = rs.getString("startDate");
-				bean.setStartDate(startDate);
-				String endDate = rs.getString("endDate");
-				bean.setEndDate(endDate);
+				String tripName = rs.getString("trip_name");
+				String tripLocation = rs.getString("trip_location");
+				String startDate = rs.getString("start_date");
+				String endDate = rs.getString("end_date");
+				int numPackList = rs.getInt("num_packing_list");
 				int reminder = rs.getInt("reminder");
-				bean.setReminder(reminder);
-				int numPackList = rs.getInt("numPackList");
-				bean.setNumPackList(numPackList);
-				bean.setValid(true);
+				MyTripListBean dto = new MyTripListBean(uid, tripName, tripLocation, startDate, endDate, numPackList, reminder);
+				//
+				list.add(dto);
 			}
-		} catch (Exception ex) {
-			System.out.println("Log In failed: An Exception has occurred! " + ex);
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}finally{
+			try{
+				if(rs!=null)rs.close();
+				if(stmt!=null)stmt.close();
+				if(currentCon!=null)currentCon.close();
+			}
+			catch(Exception e){}
 		}
-		return bean;
+		return list;
 	}
 }

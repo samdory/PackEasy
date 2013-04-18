@@ -6,10 +6,20 @@ public class MyTripListBean {
 	private String tripLocation;
 	private String startDate;
 	private String endDate;
-	private int reminder;
 	private int numPackList;
-	private boolean valid;
+	private int reminder;
 
+	public MyTripListBean(){}
+	public MyTripListBean(String uid, String tripName, String tripLocation, String startDate, String endDate, int numPackList, int reminder){
+		this.uid = uid;
+		this.tripName = tripName;
+		this.tripLocation = tripLocation;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.numPackList = numPackList;
+		this.reminder = reminder;
+	}
+	
 	public String getUid() {
 		return uid;
 	}
@@ -52,11 +62,4 @@ public class MyTripListBean {
 	public void setReminder(int reminder) {
 		this.reminder = reminder;
 	}
-	public boolean isValid() {
-		return valid;
-	}
-	public void setValid(boolean valid) {
-		this.valid = valid;
-	}
-
 }
